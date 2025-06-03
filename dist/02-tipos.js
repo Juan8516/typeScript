@@ -7,13 +7,13 @@ console.log(`Nombre: ${nombreUsuario}, Apellidos: ${apellidosUsuario}`);
 // Definición de variables con tipos primitivos - const
 const nacionalidadUsuario = "Colombiano";
 // nacionalidadUsuario = "Mexicano"; // Esto causará un error porque 'const' no permite reasignación
-// string
+// String
 let pais = "Colombia";
 console.log(`País: ${pais}`);
-// number
+// Number
 let edadUsuario = 40;
 console.log(`Edad: ${edadUsuario}`);
-// boolean
+// Boolean
 let verdadero = true;
 console.log(`¿Es verdadero? ${verdadero}`);
 // Any
@@ -24,9 +24,13 @@ console.log(`Variable any ahora es un número: ${variableCualquiera}`);
 // Arrays
 let lenguajes = ["JavaScript", "TypeScript", "Python"];
 console.log(`Lenguajes: ${lenguajes.join(", ")}`);
-let decadas = [1980, 1990, 2000, 2010];
+// Mezcla de tipos en arrays
+let decadas = [1980, 1990, 2000, 2010, "2020"]; // Array con mezcla de tipos
 console.log(`Décadas: ${decadas.join(", ")}`);
 // Tipos especiales
 let sinDefinir = undefined;
 let nulo = null;
 console.log(`Sin definir: ${sinDefinir}, Nulo: ${nulo}`);
+let nombreYedad = "Carlos"; // Puede ser un string
+let edadYactivo = 30; // Puede ser un número
+console.log(`Nombre y edad: ${nombreYedad}, Edad y activo: ${edadYactivo}`);

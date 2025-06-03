@@ -11,15 +11,15 @@ const nacionalidadUsuario: string = "Colombiano";
 
 // nacionalidadUsuario = "Mexicano"; // Esto causará un error porque 'const' no permite reasignación
 
-// string
+// String
 let pais: string = "Colombia";
 console.log(`País: ${pais}`);
 
-// number
+// Number
 let edadUsuario: number = 40;
 console.log(`Edad: ${edadUsuario}`);
 
-// boolean
+// Boolean
 let verdadero: boolean = true;
 console.log(`¿Es verdadero? ${verdadero}`);
 
@@ -33,10 +33,17 @@ console.log(`Variable any ahora es un número: ${variableCualquiera}`);
 let lenguajes: string[] = ["JavaScript", "TypeScript", "Python"];
 console.log(`Lenguajes: ${lenguajes.join(", ")}`);
 
-let decadas: Array<number> = [1980, 1990, 2000, 2010];
+// Mezcla de tipos en arrays
+let decadas: Array<number|string> = [1980, 1990, 2000, 2010, "2020"]; // Array con mezcla de tipos
 console.log(`Décadas: ${decadas.join(", ")}`);
 
 // Tipos especiales
 let sinDefinir: undefined = undefined;
 let nulo: null = null;
 console.log(`Sin definir: ${sinDefinir}, Nulo: ${nulo}`);
+
+// Tipos personalizados
+type Usuario = string | number | boolean;
+let nombreYedad: Usuario = "Carlos"; // Puede ser un string
+let edadYactivo: Usuario = 30; // Puede ser un número
+console.log(`Nombre y edad: ${nombreYedad}, Edad y activo: ${edadYactivo}`);
