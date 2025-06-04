@@ -20,6 +20,10 @@ function AgregarMetodo(target: any) {
     }
 }
 
+interface Carro {
+    acelerar: () => void;
+}
+
 @AgregarMetodo
 class Carro {
     constructor() {
