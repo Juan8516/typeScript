@@ -6,4 +6,5 @@ function getNombre(miNombre) {
 let miFuncion = (parametro) => {
     return parseInt(parametro);
 }; // Asignación de la función a una variable
-miFuncion("2025"); // Llamada a la función
+console.log(getNombre("Juan")); // Llamada a la función
+console.log(miFuncion("2025")); // Llamada a la función

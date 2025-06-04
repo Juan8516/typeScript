@@ -11,4 +11,5 @@ let miFuncion = (parametro: string): number => {
 
 } // Asignación de la función a una variable
 
-miFuncion("2025"); // Llamada a la función
+console.log(getNombre("Juan")); // Llamada a la función
+console.log(miFuncion("2025")); // Llamada a la función
