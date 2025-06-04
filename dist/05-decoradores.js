@@ -16,12 +16,19 @@ function turbo(mensaje) {
         console.log(`Mi ${target.name} tiene turbo: ${mensaje}`);
     };
 }
+// Decoradores para crear metodos de clase
+function AgregarMetodo(target) {
+    target.prototype.acelerar = function () {
+        console.log("Acelerando...con metodo decorado");
+    };
+}
 let Carro = class Carro {
     constructor() {
         console.log("Carro creado");
     }
 };
 Carro = __decorate([
-    turbo("¡Acelera rápido!")
+    AgregarMetodo
 ], Carro);
 let carro = new Carro();
+carro.acelerar(); //Error con intencion, sin agregar interface
